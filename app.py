@@ -14,9 +14,9 @@ def largest_number(num1, num2, num3):
     else:
         return num3
         
-first_num = st.number_input("Enter first Number", min_value = -3000000, max_value = 3000000, step = 1)
-second_num = st.number_input("Enter second Number", min_value = -3000000, max_value = 3000000, step = 1)
-third_num = st.number_input(("Enter third Number", min_value = -3000000, max_value = 3000000, step = 1)
+first_num = st.number_input("Enter first Number", min_value=-3000000, max_value = 3000000, step = 1)
+second_num = st.number_input("Enter second Number", min_value=-3000000, max_value = 3000000, step = 1)
+third_num = st.number_input(("Enter third Number", min_value=-30000, max_value = 3000000, step = 1)
 
 if st.button("Find largest number"):
     result = largest_number(first_num,second_num,third_num)
