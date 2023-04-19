@@ -20,7 +20,7 @@ third_num = st.number_input("Third Number")
 
 if st.button("Find largest number"):
     result = largest_number(num1, num2, num3)
-    return st.success("The largest among all is: {}".format(result))
+    st.success("The largest among all is {}".format(result))
     
 
 
