@@ -14,13 +14,13 @@ def largest_number(num1, num2, num3):
     else:
         return num3
         
-first_num = st.number_input("First Number")
-second_num = st.number_input("Second Number")
-third_num = st.number_input("Third Number")
+first_num = st.number_input(int(input("Enter first Number")))
+second_num = st.number_input(int(input("Enter second Number")))
+third_num = st.number_input(int(input("Enter third Number")))
 
 if st.button("Find largest number"):
-    result = largest_number(num1, num2, num3)
-    st.success("The largest among all is {}".format(result))
+    result = largest_number(first_num,second_num,third_num)
+    st.success("The largest among all is: {}".format(result))
     
 
 
