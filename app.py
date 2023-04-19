@@ -8,7 +8,11 @@ def largest_number(num1, num2, num3):
     else:
         return num3
 
-st.title("Find the largest number")
+st.write("""
+# Find the largest number
+
+Enter three numbers and find largest number among them
+""")
 
 num1 = st.number_input("Enter the first number")
 num2 = st.number_input("Enter the second number")
@@ -16,7 +20,7 @@ num3 = st.number_input("Enter the third number")
 
 if st.button("Find the largest number"):
     result = largest_number(num1, num2, num3)
-    st.success("The largest number is {}".format(result))
+    st.success("The largest number is: {}".format(result))
 
     
 
